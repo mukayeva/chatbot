@@ -4,7 +4,7 @@ import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
 import { MainContainer, ChatContainer, MessageList, Message, MessageInput, TypingIndicator } from '@chatscope/chat-ui-kit-react';
 import {dataset_part1, dataset_part2, initialText} from './data/dataset.jsx'
 
-const API_KEY = "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";
+const API_KEY = "";
 
 const systemMessage = { 
   "role": "system", "content": "Explain things like you're talking to a software professional with 2 years of experience."
@@ -22,8 +22,7 @@ function App() {
 
 
   const handleSend = async (message) => {
-
-    const requirement = "Based on dataset Part 1 and Part 2, ";
+    const requirement = "Based on dataset Part 1 and Part 2, "
     const newMessage = {
       message: requirement + message,
       direction: 'outgoing',
